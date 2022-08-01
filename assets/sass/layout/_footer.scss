@@ -1,0 +1,84 @@
+.footer{
+    padding: 0 2rem;
+    &-heading{
+        color: $color-white;
+        text-transform: uppercase;
+    }
+    &-para{
+        color: $color-gray-dark;
+        font-size: 1.2rem;
+    }
+    &-span{
+        color: $color-white;
+        font-size: 2rem;
+        
+    }
+}
+
+.footerImg{
+    width: 21.5rem;
+    height: 9rem;
+}
+
+.footerDiv{
+    // &:not(:last-child){
+    //     border-bottom: 3px solid $color-gray-light ;
+    // }
+    &-link{
+        display: inline-block;
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        width:100%;
+        padding: .3rem 0 .3rem;
+        border-bottom: 1px solid $color-gray-dark ;
+    }
+}
+
+.post{
+    color: $color-gray-dark;
+    &-heading{
+        font-size: 1.6rem;
+        &-p1{
+            font-size: 1.2rem;
+            padding-bottom: 2.5rem;
+        }
+        &-p2{
+            font-size: 1.4rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+}
+
+.contactUs{
+    & span{
+        display: inline-block;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    ::placeholder{
+        color: $color-gray-light;
+    }
+    & input[type="text"], textarea {
+
+        background-color : $color-gray-dark; 
+      
+      }
+    &-boxHight{
+        padding: 1.5rem 1.5rem;
+        //background-color: $color-gray-dark;
+        border-radius: 1rem;
+        width: 100%;
+    
+    }
+    &-msg{
+        height: 16rem;
+    }
+
+}
+
+.bottom{
+    color: $color-gray-darker;
+    height: 6rem;
+    background-color: $color-gray-dark;  
+}

@@ -1,0 +1,35 @@
+.navbar-list{
+    border-bottom: .6rem solid $color-gray-light;
+    
+    &,
+    &-item{
+        margin: 1rem;
+        & a{
+        color: $color-black;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 1rem;
+        position: relative;
+            &:hover{
+                color: $color-gray-dark;
+            }
+        &::after{
+            content: '';
+            width: 0%;
+            height: .6rem;
+            background-color: $color-gray-light;
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            transform: translate(0, -40%);
+            transition: all .4s ease-in-out;
+        }
+        &:hover::after{
+            background-color: $color-tertiary;
+            width: 100%;
+        }
+
+        }
+    }
+}

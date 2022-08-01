@@ -1,0 +1,60 @@
+.cycling-section{
+    &-img-main{
+        height: 44rem;
+        width: 55rem;
+    }
+    &-info{
+     
+        &-img{
+            width: 9rem;
+            height: 9rem;
+            display: inline-block;
+            object-fit: cover;
+            transition: all .2s;
+            outline-offset: 1.2rem;
+            border-radius: .5rem;
+            
+            &-1{
+               &:hover{
+                outline: .3rem solid $color-tertiary;
+                transform: scale(1.05);
+               } 
+            }
+        }
+        &-heading{
+            font-size: 1.6rem;
+            color: $color-tertiary;
+        }
+        &-para{
+            font-size: 1.4rem;
+        }
+    }
+}
+.strip{
+    &-box{
+        background-color: $color-secondary;
+        height:14rem;
+       padding: 2rem 2rem;
+        margin: 4rem;
+        border-left: 1.5rem solid transparent;
+        position: relative;
+        &:hover{
+            border-left: 1.5rem solid $color-tertiary;
+            transition: all 1s ease-in-out;
+            
+        }
+       
+        &-heading{
+            font-size: 3.6rem;
+            padding: -4rem 2rem;
+        }
+        &-subhead{
+            font-size: 1.8rem;
+        }
+    }
+    &-btn{
+        margin-left: 15rem;
+        padding: 1.5rem 2rem;
+        font-size: 2.6rem;
+    }
+}
